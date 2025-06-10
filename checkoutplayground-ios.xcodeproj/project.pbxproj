@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6C9CC3942DF7D25200CDE423 /* Adyen in Frameworks */ = {isa = PBXBuildFile; productRef = 6C9CC3932DF7D25200CDE423 /* Adyen */; };
+		6C9CC3962DF7D25200CDE423 /* AdyenCard in Frameworks */ = {isa = PBXBuildFile; productRef = 6C9CC3952DF7D25200CDE423 /* AdyenCard */; };
+		6C9CC3982DF7D25200CDE423 /* AdyenComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 6C9CC3972DF7D25200CDE423 /* AdyenComponents */; };
+		6C9CC39A2DF7D25200CDE423 /* AdyenDropIn in Frameworks */ = {isa = PBXBuildFile; productRef = 6C9CC3992DF7D25200CDE423 /* AdyenDropIn */; };
+		6C9CC39C2DF7D25200CDE423 /* AdyenEncryption in Frameworks */ = {isa = PBXBuildFile; productRef = 6C9CC39B2DF7D25200CDE423 /* AdyenEncryption */; };
+		6C9CC39E2DF7D25200CDE423 /* AdyenWeChatPay in Frameworks */ = {isa = PBXBuildFile; productRef = 6C9CC39D2DF7D25200CDE423 /* AdyenWeChatPay */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		6C9CC3842DF7D08900CDE423 /* checkoutplayground-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "checkoutplayground-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +32,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C9CC39A2DF7D25200CDE423 /* AdyenDropIn in Frameworks */,
+				6C9CC3982DF7D25200CDE423 /* AdyenComponents in Frameworks */,
+				6C9CC39C2DF7D25200CDE423 /* AdyenEncryption in Frameworks */,
+				6C9CC3962DF7D25200CDE423 /* AdyenCard in Frameworks */,
+				6C9CC3942DF7D25200CDE423 /* Adyen in Frameworks */,
+				6C9CC39E2DF7D25200CDE423 /* AdyenWeChatPay in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +80,12 @@
 			);
 			name = "checkoutplayground-ios";
 			packageProductDependencies = (
+				6C9CC3932DF7D25200CDE423 /* Adyen */,
+				6C9CC3952DF7D25200CDE423 /* AdyenCard */,
+				6C9CC3972DF7D25200CDE423 /* AdyenComponents */,
+				6C9CC3992DF7D25200CDE423 /* AdyenDropIn */,
+				6C9CC39B2DF7D25200CDE423 /* AdyenEncryption */,
+				6C9CC39D2DF7D25200CDE423 /* AdyenWeChatPay */,
 			);
 			productName = "checkoutplayground-ios";
 			productReference = 6C9CC3842DF7D08900CDE423 /* checkoutplayground-ios.app */;
@@ -94,6 +115,9 @@
 			);
 			mainGroup = 6C9CC37B2DF7D08900CDE423;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6C9CC3922DF7D25200CDE423 /* XCRemoteSwiftPackageReference "adyen-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6C9CC3852DF7D08900CDE423 /* Products */;
 			projectDirPath = "";
@@ -265,6 +289,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "markseah.checkoutplayground-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -292,6 +320,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "markseah.checkoutplayground-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -320,6 +352,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6C9CC3922DF7D25200CDE423 /* XCRemoteSwiftPackageReference "adyen-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Adyen/adyen-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6C9CC3932DF7D25200CDE423 /* Adyen */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C9CC3922DF7D25200CDE423 /* XCRemoteSwiftPackageReference "adyen-ios" */;
+			productName = Adyen;
+		};
+		6C9CC3952DF7D25200CDE423 /* AdyenCard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C9CC3922DF7D25200CDE423 /* XCRemoteSwiftPackageReference "adyen-ios" */;
+			productName = AdyenCard;
+		};
+		6C9CC3972DF7D25200CDE423 /* AdyenComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C9CC3922DF7D25200CDE423 /* XCRemoteSwiftPackageReference "adyen-ios" */;
+			productName = AdyenComponents;
+		};
+		6C9CC3992DF7D25200CDE423 /* AdyenDropIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C9CC3922DF7D25200CDE423 /* XCRemoteSwiftPackageReference "adyen-ios" */;
+			productName = AdyenDropIn;
+		};
+		6C9CC39B2DF7D25200CDE423 /* AdyenEncryption */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C9CC3922DF7D25200CDE423 /* XCRemoteSwiftPackageReference "adyen-ios" */;
+			productName = AdyenEncryption;
+		};
+		6C9CC39D2DF7D25200CDE423 /* AdyenWeChatPay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C9CC3922DF7D25200CDE423 /* XCRemoteSwiftPackageReference "adyen-ios" */;
+			productName = AdyenWeChatPay;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6C9CC37C2DF7D08900CDE423 /* Project object */;
 }
